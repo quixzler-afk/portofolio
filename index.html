@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio - Fathurohman Sasikirono</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Background animated gradient -->
+    <div class="bg-gradient"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="nav-brand">Portofolio Fathur.</div>
+        <ul class="nav-menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="profile-photo">
+            <img
+              src="image/foto-profil.jpeg"
+              alt="Profile Photo"
+              id="profileImg"
+            />
+          </div>
+          <h1 class="hero-title">Fathurohman Sasikirono</h1>
+          <p class="hero-subtitle">Web Developer | Software Engineer</p>
+          <p class="hero-description">
+            Passionate about creating innovative solutions through code
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">Lihat Project</a>
+            <a href="#contact" class="btn btn-secondary">Hubungi Saya</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title">Tentang Saya</h2>
+        <div class="about-content glass-card">
+          <div class="about-description">
+            <h3>Biodata</h3>
+            <p>
+              Web Developer dengan minat kuat pada pengembangan aplikasi web dan
+              software. Berpengalaman membangun sistem berbasis frontend,
+              backend, dan database, serta memiliki pemahaman dasar Machine
+              Learning. Adaptif, cepat belajar, dan berkomitmen untuk terus
+              berkembang dalam dunia teknologi informasi.
+            </p>
+
+            <h3 style="margin-top: 20px">Skills</h3>
+            <div class="skills">
+              <span class="skill-tag">HTML</span>
+              <span class="skill-tag">CSS</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">Vite.js</span>
+              <span class="skill-tag">PHP</span>
+              <span class="skill-tag">PHPMyAdmin</span>
+              <span class="skill-tag">MySQL</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">UI/UX Design</span>
+              <span class="skill-tag">Altair Studio</span>
+              <span class="skill-tag">RapidMiner</span>
+              <span class="skill-tag">Machine Learning</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid" id="projectsGrid">
+          <!-- Projects will be dynamically loaded here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">Hubungi Saya</h2>
+        <div class="contact-content glass-card">
+          <div class="contact-info">
+            <div class="contact-item" data-copy="fatuur@gmail.com">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                ></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+
+              <span class="contact-text">fatuur@gmail.com</span>
+              <span class="copy-hint">Click to copy</span>
+            </div>
+
+            <a
+              href="https://github.com/quixzler-afk"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contact-item contact-link"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                ></path>
+              </svg>
+              <span class="contact-text">github.com/quixzler-afk</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 Fathurohman Sasikirono. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Project Modal -->
+    <div id="projectModal" class="modal">
+      <div class="modal-content glass-card">
+        <span class="close">&times;</span>
+        <h2 id="modalTitle"></h2>
+        <div class="modal-slider">
+          <button class="slider-btn prev">❮</button>
+          <div class="slider-container">
+            <img id="modalImage" src="" alt="Project Image" />
+          </div>
+          <button class="slider-btn next">❯</button>
+        </div>
+        <div class="slider-dots" id="sliderDots"></div>
+        <p id="modalDescription"></p>
+        <div id="modalTech" class="modal-tech"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
